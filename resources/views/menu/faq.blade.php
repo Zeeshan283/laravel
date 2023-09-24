@@ -139,7 +139,7 @@
 										<i class="icon-search"></i>
 									</button>
 								</div>
-								<input required="required" type="text" class="form-control" placeholder="Why Should I Use Swigo ?">
+								<input required="required" type="text" class="form-control" placeholder="Why Should I ?">
 							</div>
 						</form>
 					</div>

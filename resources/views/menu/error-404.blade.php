@@ -12,11 +12,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="author" content="DexignZone">
 	<meta name="robots" content="">
-	<meta name="keywords" content="restaurant, restaurant website templates, restaurant template, food, restro, hotel, bootstrap 5, bootstrap, html, frontend, swigo, responsive template, shop, cart, menu, taste, blog, service, cook, customers, website, hungry, shop cart, fast food, table booking, website templates for restaurants, food website templates">
+	{{-- <meta name="keywords" content="restaurant, restaurant website templates, restaurant template, food, restro, hotel, bootstrap 5, bootstrap, html, frontend, swigo, responsive template, shop, cart, menu, taste, blog, service, cook, customers, website, hungry, shop cart, fast food, table booking, website templates for restaurants, food website templates">
 	<meta name="description" content="Boost your food business with Swigo's restaurant website templates. Our professionally designed templates cater specifically to the needs of restaurants, offering visually stunning and functional designs. Choose from a variety of food website templates that are perfect for showcasing your menu, promoting your services, and attracting hungry customers. Partner with DexignZone to create an impressive online presence for your restaurant. Start driving more traffic and growing your business today.">
 	<meta property="og:title" content="Swigo - Empowering Your Restaurant Website Templates | DexignZone">
 	<meta property="og:description" content="Boost your food business with Swigo's restaurant website templates. Our professionally designed templates cater specifically to the needs of restaurants, offering visually stunning and functional designs. Choose from a variety of food website templates that are perfect for showcasing your menu, promoting your services, and attracting hungry customers. Partner with DexignZone to create an impressive online presence for your restaurant. Start driving more traffic and growing your business today.">
-	<meta property="og:image" content="social-image.png">
+	<meta property="og:image" content="social-image.png"> --}}
 	<meta name="format-detection" content="telephone=no">
 	
 	<!-- Mobile Specific -->
@@ -391,5 +391,4 @@
 <script src="assets/vendor/switcher/switcher.js"></script><!-- CUSTOM JS -->
 </body>
 
-<!-- Mirrored from swigo.dexignzone.com/xhtml/error-404.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Sep 2023 18:07:54 GMT -->
 </html>
