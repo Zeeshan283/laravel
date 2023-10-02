@@ -205,7 +205,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 xl-100">
+                    {{-- <div class="col-xl-4 xl-100">
                         <div class="card height-equal">
                             <div class="card-header">
                                 <h5>Order Activity</h5>
@@ -396,7 +396,7 @@
                                 </div>
                                 <div class="code-box-copy">
                                     <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#example-head1" title="" data-original-title="Copy"><i class="icofont icofont-copy-alt"></i></button>
-                                    {{-- <pre class=" language-html"><code class=" language-html" id="example-head1">
+                                     <pre class=" language-html"><code class=" language-html" id="example-head1">
                                         &lt;div class="user-status table-responsive latest-order-table"&gt;
                                             &lt;table class="table table-bordernone"&gt;
                                                 &lt;thead&gt;
@@ -441,7 +441,7 @@
                                                 &lt;/tbody&gt;
                                             &lt;/table&gt;
                                         &lt;/div&gt;
-                                    </code></pre> --}}
+                                    </code></pre> 
                                 </div>
                             </div>
                         </div>
@@ -691,71 +691,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                {{-- <div class="code-box-copy">
-                                    <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#example-hea6" title="" data-original-title="Copy"><i class="icofont icofont-copy-alt"></i></button>
-                                    <pre class=" language-html"><code class=" language-html" id="example-head6">
-                                        &lt;div class="row"&gt;
-                                            &lt;div class="col-xl-8"&gt;
-                                            &lt;div class="jvector-map-height" id="world"&gt;&lt;/div&gt;
-                                            &lt;/div&gt;
-                                            &lt;div class="col-xl-4"&gt;
-                                            &lt;div class="table-responsive map-table"&gt;
-                                                &lt;table class="table"&gt;
-                                                    &lt;thead&gt;
-                                                        &lt;tr&gt;
-                                                        &lt;th&gt;Country&lt;/th&gt;
-                                                        &lt;th&gt;2018&lt;/th&gt;
-                                                        &lt;th&gt;2019&lt;/th&gt;
-                                                        &lt;th&gt;Change&lt;/th&gt;
-                                                        &lt;/tr&gt;
-                                                    &lt;/thead&gt;
-                                                    &lt;tbody&gt;
-                                                        &lt;tr&gt;
-                                                        &lt;td&gt;Bhopal&lt;/td&gt;
-                                                        &lt;td&gt;1,048&lt;/td&gt;
-                                                        &lt;td&gt;2,213&lt;/td&gt;
-                                                        &lt;td&gt;6.8%&lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                        &lt;tr&gt;
-                                                        &lt;td&gt;Saudi Arbia&lt;/td&gt;
-                                                        &lt;td&gt;576&lt;/td&gt;
-                                                        &lt;td&gt;1,297&lt;/td&gt;
-                                                        &lt;td&gt;4.3%&lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                        &lt;tr&gt;
-                                                        &lt;td&gt;Kazakstan&lt;/td&gt;
-                                                        &lt;td&gt;879&lt;/td&gt;
-                                                        &lt;td&gt;1,985&lt;/td&gt;
-                                                        &lt;td&gt;7.0%&lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                        &lt;tr&gt;
-                                                            &lt;td&gt;Canada&lt;/td&gt;
-                                                            &lt;td&gt;1,871&lt;/td&gt;
-                                                            &lt;td&gt;2,546&lt;/td&gt;
-                                                            &lt;td&gt;6.2%&lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                        &lt;tr&gt;
-                                                            &lt;td&gt;Brazil&lt;/td&gt;
-                                                            &lt;td&gt;957&lt;/td&gt;
-                                                            &lt;td&gt;1,975&lt;/td&gt;
-                                                            &lt;td&gt;5.6%&lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                        &lt;tr&gt;
-                                                        &lt;td&gt;Russia&lt;/td&gt;
-                                                        &lt;td&gt;1,480&lt;/td&gt;
-                                                        &lt;td&gt;1,631&lt;/td&gt;
-                                                        &lt;td&gt;8.7%&lt;/td&gt;
-                                                        &lt;/tr&gt;
-                                                    &lt;/tbody&gt;
-                                                &lt;/table&gt;
-                                            &lt;/div&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                    </code></pre>
-                                </div> --}}
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
                 </div>
             </div>

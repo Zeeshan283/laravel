@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,5 +39,8 @@ Route::get('/createuser', [AdminController::class,'createuser'])->name('createus
 Route::get('/slider', [AdminController::class,'slider'])->name('slider');
 Route::get('/category',[AdminController::class,'cat'])->name('cat');
 Route::get('/details',[AdminController::class,'p_details'])->name('p_details');
+
+Route::resource('products', ProductController::class);
+
 
 

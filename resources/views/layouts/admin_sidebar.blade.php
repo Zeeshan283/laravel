@@ -15,11 +15,12 @@
                             <span>Physical</span> <i class="fa fa-angle-right pull-right"></i>
                         </a> --}}
                         {{-- <ul class="sidebar-submenu"> --}}
-                    <li><a href="{{ route('category')}}"><i class="fa fa-circle"></i>Category</a></li>
-                    <li><a href="{{ route('sub_category')}}"><i class="fa fa-circle"></i>Sub Category</a></li>
+                    {{-- <li><a href="{{ route('category')}}"><i class="fa fa-circle"></i>Category</a></li> --}}
+                    {{-- <li><a href="{{ route('sub_category')}}"><i class="fa fa-circle"></i>Sub Category</a></li>
                     <li><a href="{{ route('products')}}"><i class="fa fa-circle"></i>Product List</a></li>
-                    <li><a href="{{ route('pdetails')}}"><i class="fa fa-circle"></i>Product Detail</a></li>
-                    <li><a href="{{ route('addproduct')}}"><i class="fa fa-circle"></i>Add Product</a></li>
+                    <li><a href="{{ route('pdetails')}}"><i class="fa fa-circle"></i>Product Detail</a></li> --}}
+                    <li><a href="{{ route('products.create')}}"><i class="fa fa-circle"></i>Add Product</a></li>
+                    <li><a href="{{ route('products.index')}}"><i class="fa fa-circle"></i>All Products</a></li>
                         {{-- </ul> --}}
                 </ul>
             </li>
