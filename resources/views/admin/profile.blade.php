@@ -8,8 +8,8 @@
     <meta name="description" content="Bigdeal admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Bigdeal admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="../assets/images/favicon/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="../assets/images/favicon/favicon.png" type="image/x-icon">
+    <link rel="icon" href="../assets/admin/images/favicon/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/admin/images/favicon/favicon.png" type="image/x-icon">
     <title>Bigdeal - Premium Admin Template</title>
 
     <!-- Google font-->
@@ -17,16 +17,16 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Font Awesome-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../assets/admin/css/font-awesome.css">
 
     <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/flag-icon.css">
+    <link rel="stylesheet" type="text/css" href="../assets/admin/css/flag-icon.css">
 
     <!-- Bootstrap css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../assets/admin/css/bootstrap.css">
 
     <!-- App css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/admin.css">
+    <link rel="stylesheet" type="text/css" href="../assets/admin/css/admin.css">
 </head>
 <body>
 
@@ -36,7 +36,7 @@
     <!-- Page Header Start-->
     <div class="page-main-header">
         <div class="main-header-left">
-            <div class="logo-wrapper"><a href="index.html"><img class="blur-up lazyloaded" src="../assets/images/layout-2/logo/logo.png" alt=""></a></div>
+            <div class="logo-wrapper"><a href="index.html"><img class="blur-up lazyloaded" src="../assets/admin/images/layout-2/logo/logo.png" alt=""></a></div>
         </div>
         <div class="main-header-right ">
             <div class="mobile-sidebar">
@@ -133,7 +133,7 @@
                     </li>
                     <li><a href="javascript:void(0)"><i class="right_side_toggle" data-feather="message-square"></i><span class="dot"></span></a></li>
                     <li class="onhover-dropdown">
-                        <div class="media align-items-center"><img class="align-self-center pull-right img-50 rounded-circle blur-up lazyloaded" src="../assets/images/dashboard/man.png" alt="header-user">
+                        <div class="media align-items-center"><img class="align-self-center pull-right img-50 rounded-circle blur-up lazyloaded" src="../assets/admin/images/dashboard/man.png" alt="header-user">
                             <div class="dotted-animation"><span class="animate-circle"></span><span class="main-circle"></span></div>
                         </div>
                         <ul class="profile-dropdown onhover-show-div p-20 profile-dropdown-hover">
@@ -154,100 +154,8 @@
     <div class="page-body-wrapper">
 
         <!-- Page Sidebar Start-->
-        <div class="page-sidebar">
-            <div class="sidebar custom-scrollbar">
-                <div class="sidebar-user text-center">
-                    <div><img class="img-60 rounded-circle lazyloaded blur-up" src="../assets/images/dashboard/man.png" alt="#">
-                    </div>
-                    <h6 class="mt-3 f-14">JOHN</h6>
-                    <p>Ux Designer</p>
-                </div>
-                <ul class="sidebar-menu">
-                    <li><a class="sidebar-header" href="index.html"><i data-feather="home"></i><span>Dashboard</span></a></li>
-                    <li><a class="sidebar-header" href="javascript:void(0)"><i data-feather="box"></i> <span>Products</span><i class="fa fa-angle-right pull-right"></i></a>
-                        <ul class="sidebar-submenu">
-                            <li>
-                                <a href="javascript:void(0)"><i class="fa fa-circle"></i>
-                                    <span>Physical</span> <i class="fa fa-angle-right pull-right"></i>
-                                </a>
-                                <ul class="sidebar-submenu">
-                                    <li><a href="category.html"><i class="fa fa-circle"></i>Category</a></li>
-                                    <li><a href="category-sub.html"><i class="fa fa-circle"></i>Sub Category</a></li>
-                                    <li><a href="product-list.html"><i class="fa fa-circle"></i>Product List</a></li>
-                                    <li><a href="product-detail.html"><i class="fa fa-circle"></i>Product Detail</a></li>
-                                    <li><a href="add-product.html"><i class="fa fa-circle"></i>Add Product</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)"><i class="fa fa-circle"></i>
-                                    <span>Digital</span> <i class="fa fa-angle-right pull-right"></i>
-                                </a>
-                                <ul class="sidebar-submenu">
-                                    <li><a href="category-digital.html"><i class="fa fa-circle"></i>Category</a></li>
-                                    <li><a href="category-digitalsub.html"><i class="fa fa-circle"></i>Sub Category</a></li>
-                                    <li><a href="product-listdigital.html"><i class="fa fa-circle"></i>Product List</a></li>
-                                    <li><a href="add-digital-product.html"><i class="fa fa-circle"></i>Add Product</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a class="sidebar-header" href=""><i data-feather="dollar-sign"></i><span>Sales</span><i class="fa fa-angle-right pull-right"></i></a>
-                        <ul class="sidebar-submenu">
-                            <li><a href="order.html"><i class="fa fa-circle"></i>Orders</a></li>
-                            <li><a href="transactions.html"><i class="fa fa-circle"></i>Transactions</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="sidebar-header" href=""><i data-feather="tag"></i><span>Coupons</span><i class="fa fa-angle-right pull-right"></i></a>
-                        <ul class="sidebar-submenu">
-                            <li><a href="coupon-list.html"><i class="fa fa-circle"></i>List Coupons</a></li>
-                            <li><a href="coupon-create.html"><i class="fa fa-circle"></i>Create Coupons </a></li>
-                        </ul>
-                    </li>
-                    <li><a class="sidebar-header" href="javascript:void(0)"><i data-feather="clipboard"></i><span>Pages</span><i class="fa fa-angle-right pull-right"></i></a>
-                        <ul class="sidebar-submenu">
-                            <li><a href="pages-list.html"><i class="fa fa-circle"></i>List Page</a></li>
-                            <li><a href="page-create.html"><i class="fa fa-circle"></i>Create Page</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="sidebar-header" href="media.html"><i data-feather="camera"></i><span>Media</span></a></li>
-                    <li><a class="sidebar-header" href="javascript:void(0)"><i data-feather="align-left"></i><span>Menus</span><i class="fa fa-angle-right pull-right"></i></a>
-                        <ul class="sidebar-submenu">
-                            <li><a href="menu-list.html"><i class="fa fa-circle"></i>Menu Lists</a></li>
-                            <li><a href="create-menu.html"><i class="fa fa-circle"></i>Create Menu</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="sidebar-header" href=""><i data-feather="user-plus"></i><span>Users</span><i class="fa fa-angle-right pull-right"></i></a>
-                        <ul class="sidebar-submenu">
-                            <li><a href="user-list.html"><i class="fa fa-circle"></i>User List</a></li>
-                            <li><a href="create-user.html"><i class="fa fa-circle"></i>Create User</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="sidebar-header" href=""><i data-feather="users"></i><span>Vendors</span><i class="fa fa-angle-right pull-right"></i></a>
-                        <ul class="sidebar-submenu">
-                            <li><a href="list-vendor.html"><i class="fa fa-circle"></i>Vendor List</a></li>
-                            <li><a href="create-vendors.html"><i class="fa fa-circle"></i>Create Vendor</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="sidebar-header" href=""><i data-feather="chrome"></i><span>Localization</span><i class="fa fa-angle-right pull-right"></i></a>
-                        <ul class="sidebar-submenu">
-                            <li><a href="translations.html"><i class="fa fa-circle"></i>Translations</a></li>
-                            <li><a href="currency-rates.html"><i class="fa fa-circle"></i>Currency Rates</a></li>
-                            <li><a href="taxes.html"><i class="fa fa-circle"></i>Taxes</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="sidebar-header" href="reports.html"><i data-feather="bar-chart"></i><span>Reports</span></a></li>
-                    <li><a class="sidebar-header" href=""><i data-feather="settings" ></i><span>Settings</span><i class="fa fa-angle-right pull-right"></i></a>
-                        <ul class="sidebar-submenu">
-                            <li><a href="profile.html"><i class="fa fa-circle"></i>Profile</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="sidebar-header" href="invoice.html"><i data-feather="archive"></i><span>Invoice</span></a>
-                    </li>
-                    <li><a class="sidebar-header" href="login.html"><i data-feather="log-in"></i><span>Login</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+@include('layouts.admin_sidebar')
+       
         <!-- Page Sidebar Ends-->
 
         <!-- Right sidebar Start-->
@@ -268,49 +176,49 @@
                     <div class="chat-box">
                         <div class="people-list friend-list">
                             <ul class="list">
-                                <li class="clearfix"><img class="rounded-circle user-image blur-up lazyloaded" src="../assets/images/dashboard/user.png" alt="">
+                                <li class="clearfix"><img class="rounded-circle user-image blur-up lazyloaded" src="../assets/admin/images/dashboard/user.png" alt="">
                                     <div class="status-circle online"></div>
                                     <div class="about">
                                         <div class="name">Vincent Porter</div>
                                         <div class="status"> Online</div>
                                     </div>
                                 </li>
-                                <li class="clearfix"><img class="rounded-circle user-image blur-up lazyloaded" src="../assets/images/dashboard/user1.jpg" alt="">
+                                <li class="clearfix"><img class="rounded-circle user-image blur-up lazyloaded" src="../assets/admin/images/dashboard/user1.jpg" alt="">
                                     <div class="status-circle away"></div>
                                     <div class="about">
                                         <div class="name">Ain Chavez</div>
                                         <div class="status"> 28 minutes ago</div>
                                     </div>
                                 </li>
-                                <li class="clearfix"><img class="rounded-circle user-image blur-up lazyloaded" src="../assets/images/dashboard/user2.jpg" alt="">
+                                <li class="clearfix"><img class="rounded-circle user-image blur-up lazyloaded" src="../assets/admin/images/dashboard/user2.jpg" alt="">
                                     <div class="status-circle online"></div>
                                     <div class="about">
                                         <div class="name">Kori Thomas</div>
                                         <div class="status"> Online</div>
                                     </div>
                                 </li>
-                                <li class="clearfix"><img class="rounded-circle user-image blur-up lazyloaded" src="../assets/images/dashboard/user3.jpg" alt="">
+                                <li class="clearfix"><img class="rounded-circle user-image blur-up lazyloaded" src="../assets/admin/images/dashboard/user3.jpg" alt="">
                                     <div class="status-circle online"></div>
                                     <div class="about">
                                         <div class="name">Erica Hughes</div>
                                         <div class="status"> Online</div>
                                     </div>
                                 </li>
-                                <li class="clearfix"><img class="rounded-circle user-image blur-up lazyloaded" src="../assets/images/dashboard/man.png" alt="">
+                                <li class="clearfix"><img class="rounded-circle user-image blur-up lazyloaded" src="../assets/admin/images/dashboard/man.png" alt="">
                                     <div class="status-circle offline"></div>
                                     <div class="about">
                                         <div class="name">Ginger Johnston</div>
                                         <div class="status"> 2 minutes ago</div>
                                     </div>
                                 </li>
-                                <li class="clearfix"><img class="rounded-circle user-image blur-up lazyloaded" src="../assets/images/dashboard/user5.jpg" alt="">
+                                <li class="clearfix"><img class="rounded-circle user-image blur-up lazyloaded" src="../assets/admin/images/dashboard/user5.jpg" alt="">
                                     <div class="status-circle away"></div>
                                     <div class="about">
                                         <div class="name">Prasanth Anand</div>
                                         <div class="status"> 2 hour ago</div>
                                     </div>
                                 </li>
-                                <li class="clearfix"><img class="rounded-circle user-image blur-up lazyloaded" src="../assets/images/dashboard/designer.jpg" alt="">
+                                <li class="clearfix"><img class="rounded-circle user-image blur-up lazyloaded" src="../assets/admin/images/dashboard/designer.jpg" alt="">
                                     <div class="status-circle online"></div>
                                     <div class="about">
                                         <div class="name">Hileri Jecno</div>
@@ -357,7 +265,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="profile-details text-center">
-                                    <img src="../assets/images/dashboard/designer.jpg" alt="" class="img-fluid img-90 rounded-circle blur-up lazyloaded">
+                                    <img src="../assets/admin/images/dashboard/designer.jpg" alt="" class="img-fluid img-90 rounded-circle blur-up lazyloaded">
                                     <h5 class="f-w-600 mb-0">John deo</h5>
                                     <span>johndeo@gmail.com</span>
                                     <div class="social">
@@ -541,30 +449,30 @@
 </div>
 
 <!-- latest jquery-->
-<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../assets/admin/js/jquery-3.3.1.min.js"></script>
 
 <!-- Bootstrap js-->
-<script src="../assets/js/popper.min.js"></script>
-<script src="../assets/js/bootstrap.js"></script>
+<script src="../assets/admin/js/popper.min.js"></script>
+<script src="../assets/admin/js/bootstrap.js"></script>
 
 <!-- feather icon js-->
-<script src="../assets/js/icons/feather-icon/feather.min.js"></script>
-<script src="../assets/js/icons/feather-icon/feather-icon.js"></script>
+<script src="../assets/admin/js/icons/feather-icon/feather.min.js"></script>
+<script src="../assets/admin/js/icons/feather-icon/feather-icon.js"></script>
 
 <!-- Sidebar jquery-->
-<script src="../assets/js/sidebar-menu.js"></script>
+<script src="../assets/admin/js/sidebar-menu.js"></script>
 
 <!--Customizer admin-->
-<script src="../assets/js/admin-customizer.js"></script>
+<script src="../assets/admin/js/admin-customizer.js"></script>
 
 <!-- lazyload js-->
-<script src="../assets/js/lazysizes.min.js"></script>
+<script src="../assets/admin/js/lazysizes.min.js"></script>
 
 <!--right sidebar js-->
-<script src="../assets/js/chat-menu.js"></script>
+<script src="../assets/admin/js/chat-menu.js"></script>
 
 <!--script admin-->
-<script src="../assets/js/admin-script.js"></script>
+<script src="../assets/admin/js/admin-script.js"></script>
 
 </body>
 </html>

@@ -4,9 +4,10 @@
         <div class="sidebar-user text-center">
             <div><img class="img-60 rounded-circle lazyloaded blur-up" src="../assets/admin/images/dashboard/man.png" alt="#">
             </div>
-            <h6 class="mt-3 f-14">User</h6>
-            <p>Resturant Name</p>
+            <h6 class="mt-3 f-14">{{ Auth::user()->name }}</h6>
+            <p>{{ Auth::user()->r_name}}</p>
         </div>
+        
         <ul class="sidebar-menu">
             <li><a class="sidebar-header" href="{{ route('admin')}}"><i data-feather="home"></i><span>Dashboard</span></a></li>
             <li><a class="sidebar-header" href="javascript:void(0)"><i data-feather="box"></i> <span>Products</span><i class="fa fa-angle-right pull-right"></i></a>
@@ -22,6 +23,12 @@
                     <li><a href="{{ route('products.create')}}"><i class="fa fa-circle"></i>Add Product</a></li>
                     <li><a href="{{ route('products.index')}}"><i class="fa fa-circle"></i>All Products</a></li>
                         {{-- </ul> --}}
+                </ul>
+            </li>
+             <li><a class="sidebar-header" href=""><i data-feather="user-plus"></i><span>Category</span><i class="fa fa-angle-right pull-right"></i></a>
+                <ul class="sidebar-submenu">
+                    <li><a href="{{ route('userlist')}}"><i class="fa fa-circle"></i>Catrgory List</a></li>
+                    <li><a href="{{ route('createuser')}}"><i class="fa fa-circle"></i>Create Category</a></li>
                 </ul>
             </li>
              <li><a class="sidebar-header" href=""><i data-feather="user-plus"></i><span>Users</span><i class="fa fa-angle-right pull-right"></i></a>
@@ -46,7 +53,7 @@
             <li><a class="sidebar-header" href="reports.html"><i data-feather="bar-chart"></i><span>Reports</span></a></li>
             <li><a class="sidebar-header" href=""><i data-feather="settings" ></i><span>Settings</span><i class="fa fa-angle-right pull-right"></i></a>
                 <ul class="sidebar-submenu">
-                    <li><a href="profile.html"><i class="fa fa-circle"></i>Profile</a></li>
+                    <li><a href="{{ route('profile')}}"><i class="fa fa-circle"></i>Profile</a></li>
                 </ul>
             </li>
             <li><a class="sidebar-header" href="invoice.html"><i data-feather="archive"></i><span>Invoice</span></a>

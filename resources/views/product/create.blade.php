@@ -322,6 +322,19 @@
                                             <div class="form">
                                                 <div class="form-group row">
                                                     <div class="col-xl-3 col-sm-4 mb-0">
+                                                        <label for="exampleFormControlSelect1" >Select Category :</label>    
+                                                    </div>
+                                                    <div class="col-xl-8 col-sm-7">
+                                                        <select class="form-control digits " id="exampleFormControlSelect1">
+                                                            <option>Cat 1 </option>
+                                                            <option>Cat 2</option>
+                                                            <option>Cat 3</option>
+                                                            <option>Cat 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-xl-3 col-sm-4 mb-0">
                                                         <label for="exampleFormControlSelect1" >Select Size :</label>    
                                                     </div>
                                                     <div class="col-xl-8 col-sm-7">

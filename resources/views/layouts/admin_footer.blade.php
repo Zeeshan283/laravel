@@ -27,7 +27,7 @@
 <!-- feather icon js-->
 <script src="../assets/admin/js/icons/feather-icon/feather.min.js"></script>
 <script src="../assets/admin/js/icons/feather-icon/feather-icon.js"></script>
-
+    
 <!-- Sidebar jquery-->
 <script src="../assets/admin/js/sidebar-menu.js"></script>
 
@@ -49,7 +49,7 @@
 <script src="../assets/admin/js/counter/counter-custom.js"></script>
 
 <!--Customizer admin-->
-{{-- <script src="../assets/admin/js/admin-customizer.js"></script> --}}
+<script src="../assets/admin/js/admin-customizer.js"></script>
 
 <!--map js-->
 <script src="../assets/admin/js/vector-map/jquery-jvectormap-2.0.2.min.js"></script>
@@ -75,11 +75,17 @@
 <!--height equal js-->
 <script src="../assets/admin/js/equal-height.js"></script>
 
-<!-- lazyload js-->
-<script src="../assets/admin/js/lazysizes.min.js"></script>
 
 <!--script admin-->
 <script src="../assets/admin/js/admin-script.js"></script>
+
+
+{{-- user listing  --}}
+
+<script src="../assets/admin/js/jsgrid/jsgrid.min.js"></script>
+<script src="../assets/admin/js/jsgrid/griddata-users.js"></script>
+<script src="../assets/admin/js/jsgrid/jsgrid-users.js"></script>
+
 
 </body>
 </html>

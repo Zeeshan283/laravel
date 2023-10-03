@@ -113,7 +113,7 @@
                     </div>
                     <div class="card-body">
                         <div class="btn-popup pull-right">
-                            <a href="{{ route('createuser')}}" class="btn btn-secondary">Create User</a>
+                            <a href="{{ route('createuser')}}" class="btn btn-secondary">Create User </a>
                         </div>
                         <div id="batchDelete" class="category-table user-list order-table"></div>
                     </div>
@@ -123,3 +123,6 @@
 
         </div>
 @include('layouts.admin_footer')
+
+
+

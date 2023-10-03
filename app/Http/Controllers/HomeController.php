@@ -43,6 +43,16 @@ class HomeController extends Controller
         return view('menu.contact-us');
     }
 
+    public function login()
+    {
+        return view('admin.login');
+    }
+
+    public function profile()
+    {
+        return view('admin.profile');
+    }
+
   
 
     

@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProductController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,11 +17,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/',[HomeController::class, 'index'])->name('home');
+// Route::get('/',[HomeController::class, 'index'])->name('home');
 Route::get('/about-us',[HomeController::class, 'about'])->name('about');
 Route::get('/blog-both-sidebar',[HomeController::class, 'bbs'])->name('bbs');
 Route::get('/blog-detail-left-sidebar',[HomeController::class, 'bdls'])->name('bdsl');
@@ -39,8 +37,15 @@ Route::get('/createuser', [AdminController::class,'createuser'])->name('createus
 Route::get('/slider', [AdminController::class,'slider'])->name('slider');
 Route::get('/category',[AdminController::class,'cat'])->name('cat');
 Route::get('/details',[AdminController::class,'p_details'])->name('p_details');
+Route::get('/profile',[HomeController::class,'profile'])->name('profile');
 
 Route::resource('products', ProductController::class);
 
 
+// Route::get('login', [HomeController::class,'login'])->name('login');
 
+
+
+Auth::routes();
+
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

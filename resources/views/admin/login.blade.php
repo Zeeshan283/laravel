@@ -8,8 +8,8 @@
     <meta name="description" content="Bigdeal admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Bigdeal admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="../assets/images/favicon/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="../assets/images/favicon/favicon.png" type="image/x-icon">
+    <link rel="icon" href="assets/admin/images/favicon/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/admin/images/favicon/favicon.png" type="image/x-icon">
     <title>Bigdeal - Premium Admin Template</title>
 
     <!-- Google font-->
@@ -17,23 +17,23 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Font Awesome-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="assets/admin/css/font-awesome.css">
 
     <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/themify.css">
+    <link rel="stylesheet" type="text/css" href="assets/admin/css/themify.css">
 
     <!-- slick icon-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/admin/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/admin/css/slick-theme.css">
 
     <!-- jsgrid css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/jsgrid.css">
+    <link rel="stylesheet" type="text/css" href="assets/admin/css/jsgrid.css">
 
     <!-- Bootstrap css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/admin/css/bootstrap.css">
 
     <!-- App css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/admin.css">
+    <link rel="stylesheet" type="text/css" href="assets/admin/css/admin.css">
 
 </head>
 <body>
@@ -173,18 +173,33 @@
                             </ul>
                             <div class="tab-content" id="top-tabContent">
                                 <div class="tab-pane fade show active" id="top-profile" role="tabpanel" aria-labelledby="top-profile-tab">
-                                    <form class="form-horizontal auth-form">
+                                    {{-- testing  --}}
+                                    <form method="POST" class="form-horizontal auth-form" action="{{ route('login') }}">
+                                        @csrf
                                         <div class="form-group">
-                                            <input required="" name="login[username]" type="email" class="form-control" placeholder="Username" id="exampleInputEmail1">
+                                            {{-- <input required="" name="login[username]" type="email" class="form-control" placeholder="Username" id="exampleInputEmail1"> --}}
+                                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="email" required autocomplete="email" autofocus>
+                                            @error('email')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                         </div>
                                         <div class="form-group">
-                                            <input required="" name="login[password]" type="password" class="form-control" placeholder="Password">
+                                            {{-- <input required="" name="login[password]" type="password" class="form-control" placeholder="Password"> --}}
+                                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="Password" required autocomplete="current-password">
+
+                                            @error('password')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
                                         </div>
                                         <div class="form-terms">
                                             <div class="custom-control custom-checkbox mr-sm-2">
                                                 <div class="form-check">
-                                                  <input class="form-check-input custom-control-input" type="checkbox" value="" id="customControlAutosizing">
-                                                  <label class="form-check-label" for="customControlAutosizing">Remember me</label>
+                                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                                                    <label class="form-check-label" for="customControlAutosizing">Remember me</label>
                                                 </div>
                                                 <a href="javascript:void(0)" class="btn btn-default forgot-pass">lost your password</a>
                                             </div>
@@ -202,17 +217,35 @@
                                             </ul>
                                         </div>
                                     </form>
+
+                                    {{-- testing end  --}}
                                 </div>
                                 <div class="tab-pane fade" id="top-contact" role="tabpanel" aria-labelledby="contact-top-tab">
-                                    <form class="form-horizontal auth-form">
+                                    <form method="POST" class="form-horizontal auth-form" action="{{ route('register') }}">
+                                        @csrf
                                         <div class="form-group">
-                                            <input required="" name="login[username]" type="email" class="form-control" placeholder="Username" id="exampleInputEmail12">
+                                            {{-- <input required="" name="login[username]" type="email" class="form-control" placeholder="Username" id="exampleInputEmail12"> --}}
+                                            <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" placeholder="Username" required autocomplete="name" autofocus>
+
                                         </div>
                                         <div class="form-group">
-                                            <input required="" name="login[password]" type="password" class="form-control" placeholder="Password">
+                                            {{-- <input required="" name="login[username]" type="email" class="form-control" placeholder="Username" id="exampleInputEmail12"> --}}
+                                            <input id="r_name" type="text" class="form-control @error('r_name') is-invalid @enderror" name="r_name" value="{{ old('r_name') }}" placeholder="Resturant Name" required autocomplete="r_name" autofocus>
+
                                         </div>
                                         <div class="form-group">
-                                            <input required="" name="login[password]" type="password" class="form-control" placeholder="Confirm Password">
+                                            {{-- <input required="" name="login[username]" type="email" class="form-control" placeholder="Username" id="exampleInputEmail12"> --}}
+                                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="Email" required autocomplete="email">
+
+                                        </div>
+                                        <div class="form-group">
+                                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="Password" required autocomplete="new-password">
+                                        </div> 
+                                        <div class="form-group">
+                                            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password" required autocomplete="new-password">
+                                        </div> 
+                                        <div class="form-group">
+                                            {{-- <input required="" name="login[password]" type="password" class="form-control" placeholder="Confirm Password"> --}}
                                         </div>
                                         <div class="form-terms">
                                             <div class="custom-control custom-checkbox form-check mr-sm-2">                                               
@@ -251,33 +284,33 @@
 </div>
 
 <!-- latest jquery-->
-<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/admin/js/jquery-3.3.1.min.js"></script>
 
 <!-- Bootstrap js-->
-<script src="../assets/js/popper.min.js"></script>
-<script src="../assets/js/bootstrap.js"></script>
+<script src="assets/admin/js/popper.min.js"></script>
+<script src="assets/admin/js/bootstrap.js"></script>
 
 <!-- feather icon js-->
-<script src="../assets/js/icons/feather-icon/feather.min.js"></script>
-<script src="../assets/js/icons/feather-icon/feather-icon.js"></script>
+<script src="assets/admin/js/icons/feather-icon/feather.min.js"></script>
+<script src="assets/admin/js/icons/feather-icon/feather-icon.js"></script>
 
 <!-- Sidebar jquery-->
-<script src="../assets/js/sidebar-menu.js"></script>
-<script src="../assets/js/slick.js"></script>
+<script src="assets/admin/js/sidebar-menu.js"></script>
+<script src="assets/admin/js/slick.js"></script>
 
 <!-- Jsgrid js-->
-<script src="../assets/js/jsgrid/jsgrid.min.js"></script>
-<script src="../assets/js/jsgrid/griddata-invoice.js"></script>
-<script src="../assets/js/jsgrid/jsgrid-invoice.js"></script>
+<script src="assets/admin/js/jsgrid/jsgrid.min.js"></script>
+<script src="assets/admin/js/jsgrid/griddata-invoice.js"></script>
+<script src="assets/admin/js/jsgrid/jsgrid-invoice.js"></script>
 
 <!-- lazyload js-->
-<script src="../assets/js/lazysizes.min.js"></script>
+<script src="assets/admin/js/lazysizes.min.js"></script>
 
 <!--right sidebar js-->
-<script src="../assets/js/chat-menu.js"></script>
+<script src="assets/admin/js/chat-menu.js"></script>
 
 <!--script admin-->
-<script src="../assets/js/admin-script.js"></script>
+<script src="assets/admin/js/admin-script.js"></script>
 <script>
     $('.single-item').slick({
             arrows: false,

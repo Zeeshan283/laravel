@@ -74,7 +74,7 @@
 						<div class="extra-cell">
 							<ul>
 								<li>
-									<a class="btn btn-white btn-square btn-shadow" data-bs-toggle="offcanvas" href="#offcanvasLogin" role="button" aria-controls="offcanvasLogin">
+									<a class="btn btn-white btn-square btn-shadow"  href="{{ route('login')}}" role="button" aria-controls="offcanvasLogin">
 										<i class="flaticon-user"></i>
 									</a>
 								</li>
