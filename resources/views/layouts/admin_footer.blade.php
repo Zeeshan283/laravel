@@ -7,7 +7,7 @@
                         <p class="mb-0">Copyright 2023 © All rights reserved.</p>
                     </div>
                     <div class="col-md-6">
-                        <p class="pull-right mb-0">Made with love by <b>Zeeshan</b><i class="fa fa-heart"></i></p>
+                        <p class="pull-right mb-0">Made with love by <b>C</b><i class="fa fa-heart"></i></p>
                     </div>
                 </div>
             </div>
@@ -77,7 +77,7 @@
 
 
 <!--script admin-->
-<script src="../assets/admin/js/admin-script.js"></script>
+<script src=".. /assets/admin/js/admin-script.js"></script>
 
 
 {{-- user listing  --}}
@@ -85,6 +85,14 @@
 <script src="../assets/admin/js/jsgrid/jsgrid.min.js"></script>
 <script src="../assets/admin/js/jsgrid/griddata-users.js"></script>
 <script src="../assets/admin/js/jsgrid/jsgrid-users.js"></script>
+
+
+{{-- editor  --}}
+
+<script src="../assets/admin/js/editor/ckeditor/ckeditor.js"></script>
+<script src="../assets/admin/js/editor/ckeditor/styles.js"></script>
+<script src="../assets/admin/js/editor/ckeditor/adapters/jquery.js"></script>
+<script src="../assets/admin/js/editor/ckeditor/ckeditor.custom.js"></script>
 
 
 </body>

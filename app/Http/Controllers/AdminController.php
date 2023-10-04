@@ -16,10 +16,6 @@ class AdminController extends Controller
         return view('admin.index');
     }
 
-    public function category()
-    {
-        return view('admin.category');
-    }
     public function sub_category()
     {
         return view('admin.category-sub');

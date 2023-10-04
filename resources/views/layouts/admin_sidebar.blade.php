@@ -27,8 +27,8 @@
             </li>
              <li><a class="sidebar-header" href=""><i data-feather="user-plus"></i><span>Category</span><i class="fa fa-angle-right pull-right"></i></a>
                 <ul class="sidebar-submenu">
-                    <li><a href="{{ route('userlist')}}"><i class="fa fa-circle"></i>Catrgory List</a></li>
-                    <li><a href="{{ route('createuser')}}"><i class="fa fa-circle"></i>Create Category</a></li>
+                    <li><a href="{{ route('category.index')}}"><i class="fa fa-circle"></i>Catrgory List</a></li>
+                    <li><a href="{{ route('category.create')}}"><i class="fa fa-circle"></i>Create Category</a></li>
                 </ul>
             </li>
              <li><a class="sidebar-header" href=""><i data-feather="user-plus"></i><span>Users</span><i class="fa fa-angle-right pull-right"></i></a>

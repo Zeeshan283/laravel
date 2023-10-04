@@ -141,19 +141,19 @@
                         <div class="single-item">
                             <div>
                                 <div>
-                                    <h3>Welcome to Bigdeal</h3>
+                                    <h3>Welcome to Menus</h3>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
                                 </div>
                             </div>
                             <div>
                                 <div>
-                                    <h3>Welcome to Bigdeal</h3>
+                                    <h3>Welcome to Menus</h3>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
                                 </div>
                             </div>
                             <div>
                                 <div>
-                                    <h3>Welcome to Bigdeal</h3>
+                                    <h3>Welcome to Menus</h3>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
                                 </div>
                             </div>

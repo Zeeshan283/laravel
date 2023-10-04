@@ -108,13 +108,20 @@
             <!-- Container-fluid starts-->
             <div class="container-fluid">
                 <div class="card">
-                    <div class="card-header">
-                        <h5>User Details</h5>
-                    </div>
-                    <div class="card-body">
+                    <div style="display: flex;flex-direction:row" class="pt-4 ps-5">
+                        <div class="col-md-6">
+                            <h5>User Details</h5>
+                        </div>
                         <div class="btn-popup pull-right">
                             <a href="{{ route('createuser')}}" class="btn btn-secondary">Create User </a>
+
                         </div>
+                    </div>
+                        {{-- <div class="btn-popup pull-right">
+                            <a href="{{ route('createuser')}}" class="btn btn-secondary">Create User </a>
+                        </div> --}}
+                    <div class="card-body">
+                        
                         <div id="batchDelete" class="category-table user-list order-table"></div>
                     </div>
                 </div>

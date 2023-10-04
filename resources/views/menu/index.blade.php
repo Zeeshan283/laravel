@@ -128,7 +128,7 @@
 											<p class="wow fadeInUp" data-wow-delay="0.6s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 											<div class="banner-btn d-flex align-items-center wow fadeInUp" data-wow-delay="0.8s">
 												<a href="{{ route('reservation')}}" class="btn btn-primary btn-md shadow-primary m-r30 btn-hover-1"><span>Book a Table</span></a>
-												<a href="#" class="btn btn-outline-primary btn-md shadow-primary btn-hover-1"><span>Create Menu</span></a>
+												<a href="{{ route('login')}}" class="btn btn-outline-primary btn-md shadow-primary btn-hover-1"><span>Create Menu</span></a>
 											</div>
 										</div>
 									</div>
@@ -155,7 +155,7 @@
 											<p class="wow fadeInUp" data-wow-delay="0.6s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 											<div class="banner-btn d-flex align-items-center wow fadeInUp" data-wow-delay="0.8s">
 												<a href="{{ route('reservation')}}" class="btn btn-primary btn-md shadow-primary m-r30 btn-hover-1"><span>Book a Table</span></a>
-												<a href="#" class="btn btn-outline-primary btn-md shadow-primary btn-hover-1"><span>Create Menu</span></a>
+												<a href="{{ route('login')}}" class="btn btn-outline-primary btn-md shadow-primary btn-hover-1"><span>Create Menu</span></a>
 											</div>
 										</div>
 									</div>
@@ -182,7 +182,7 @@
 											<p class="wow fadeInUp" data-wow-delay="0.6s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 											<div class="banner-btn d-flex align-items-center wow fadeInUp" data-wow-delay="0.8s">
 												<a href="{{ route('reservation')}}" class="btn btn-primary btn-md shadow-primary m-r30 btn-hover-1"><span>Book a Table</span></a>
-												<a href="#" class="btn btn-outline-primary btn-md shadow-primary btn-hover-1"><span>Create Menu</span></a>
+												<a href="{{ route('login')}}" class="btn btn-outline-primary btn-md shadow-primary btn-hover-1"><span>Create Menu</span></a>
 											</div>
 										</div>
 									</div>
