@@ -2,48 +2,92 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
+
     public function __construct()
     {
         $this->middleware('auth');
     }
+
     public function index()
     {
-        return view('admin.index');
-    }
+        $data = "";
+        if (Auth::User()->role == 'Admin') {
+            
+            $products = Product::count();
+            
+            $customer = User::where('role', '=', 'Customer')->count();
+            $vendorlist = User::where('role', '=', 'Vendor')->count();
+            $new_users = User::where('role', '=', 'Customer')->latest()->take(15)->get();
+            $isAdmin = Auth::user()->role == 'Admin';
+            return view(
+                'admin.dashboard.dashboard',
+                compact(
+                    'products',
+                    'customer',
+                    'vendorlist',
+                    'new_users',
+                    'isAdmin',
+                )
+            );
+        } else {
+            
+            $products = Product::where('created_by', Auth::User()->id)->count();
+            $customer = User::count();
+            $new_users = User::where('role', '=', 'Customer')->latest()->take(15)->get();
+            $isAdmin = Auth::user();
 
-    public function sub_category()
-    {
-        return view('admin.category-sub');
+            return view(
+                'admin.dashboard.dashboard',
+                compact(
+                    'products',
+                    'customer',
+                    'new_users',
+                    'isAdmin',
+                )
+            );
+        }
     }
+    
+    // public function index()
+    // {
+    //     return view('admin.index');
+    // }
 
-    public function products()
-    {
-        return view('admin.product-list');
-    }
+    // public function sub_category()
+    // {
+    //     return view('admin.category-sub');
+    // }
+
+    // public function products()
+    // {
+    //     return view('admin.product-list');
+    // }
 
     public function pdetails()
     {
         return view('admin.product-detail');
     }
 
-    public function addproduct()
-    {
-        return view('admin.add-product');
-    }
-    public function userlist()
-    {
-        return view('admin.user-list');
-    }
+    // public function addproduct()
+    // {
+    //     return view('admin.add-product');
+    // }
+    // public function userlist()
+    // {
+    //     return view('admin.user-list');
+    // }
 
-    public function createuser()
-    {
-        return view('admin.create-user');
-    }
+    // public function createuser()
+    // {
+    //     return view('admin.create-user');
+    // }
 
     public function slider()
     {

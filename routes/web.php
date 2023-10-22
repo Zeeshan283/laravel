@@ -52,6 +52,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
         Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-        Route::resource('category',CategoryController::class);
+        Route::resource('categories',CategoryController::class);
 
 });
