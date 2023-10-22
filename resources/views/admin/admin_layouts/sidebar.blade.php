@@ -8,7 +8,7 @@
             <p>Restaurant</p>
         </div>
         <ul class="sidebar-menu">
-            <li><a class="sidebar-header" href="/"><i data-feather="home"></i><span>Dashboard</span></a></li>
+            <li><a class="sidebar-header" href="/dashboard"><i data-feather="home"></i><span>Dashboard</span></a></li>
             @if (Auth::user()->role == 'Admin')
                 
                 <li><a class="sidebar-header" href="javascript:void(0)"><i

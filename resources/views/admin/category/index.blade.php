@@ -97,11 +97,11 @@
                                 <td>{{ $item->name }}</td>
                                 <td>
                                     <div>
-                                        {{-- <a href="{{ route('categories.edit', ['Category' => $item->id]) }}">
+                                        <a href="#">
                                         <i class="fa fa-edit me-2 font-success"></i></a>
-                                        <a href="{{ route('categories.destroy', $item->id)  }}">
+                                        <a href="#">
                                         <i class="fa fa-trash font-danger"></i></a>
-                                         --}}
+                                        
                                     </div>
                                 </td>
                             </tr>

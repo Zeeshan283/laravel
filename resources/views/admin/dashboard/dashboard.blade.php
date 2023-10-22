@@ -9,7 +9,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="page-header-left">
-                            <h3>Dashboard
+                            <h3>Dashboard 
                                 {{-- <small>Bigdeal Admin panel</small> --}}
                             </h3>
                         </div>
@@ -33,7 +33,7 @@
                         <div class="bg-secondary card-body">
                             <div class="media static-top-widget">
                                 <div class="media-body"><span class="m-0">Products</span>
-                                    <h3 class="mb-0">$ <span class="counter">9856</span><small> This Month</small></h3>
+                                    <h3 class="mb-0">$ <span class="counter">{{$products}}</span><small> Total</small></h3>
                                 </div>
                                 <div class="icons-widgets">
                                     <i data-feather="box"></i>
@@ -42,12 +42,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 xl-50">
+                {{-- <div class="col-xl-3 col-md-6 xl-50">
                     <div class="card o-hidden widget-cards">
                         <div class="bg-primary card-body">
                             <div class="media static-top-widget">
                                 <div class="media-body"><span class="m-0">Messages</span>
-                                    <h3 class="mb-0">$ <span class="counter">893</span><small> This Month</small></h3>
+                                    <h3 class="mb-0">$ <span class="counter">893</span><small> Total</small></h3>
                                 </div>
                                 <div class="icons-widgets">
                                     <i data-feather="message-square"></i>
@@ -55,13 +55,13 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 <div class="col-xl-3 col-md-6 xl-50">
                     <div class="card o-hidden widget-cards">
                         <div class="bg-warning card-body">
                             <div class="media static-top-widget">
-                                <div class="media-body"><span class="m-0">Earnings</span>
-                                    <h3 class="mb-0">$ <span class="counter">6659</span><small> This Month</small></h3>
+                                <div class="media-body"><span class="m-0">Customers</span>
+                                    <h3 class="mb-0">$ <span class="counter">{{$customers}}</span><small> Total</small></h3>
                                 </div>
                                 <div class="icons-widgets">
                                     <i data-feather="navigation"></i>
@@ -74,8 +74,8 @@
                     <div class="card o-hidden widget-cards">
                         <div class="bg-success card-body">
                             <div class="media static-top-widget">
-                                <div class="media-body"><span class="m-0">New Vendors</span>
-                                    <h3 class="mb-0">$ <span class="counter">45631</span><small> This Month</small></h3>
+                                <div class="media-body"><span class="m-0">Vendors</span>
+                                    <h3 class="mb-0">$ <span class="counter">{{$vendors}}</span><small> Total</small></h3>
                                 </div>
                                 <div class="icons-widgets">
                                     <i data-feather="users"></i>
@@ -199,7 +199,7 @@
                 <div class="col-xl-8 xl-100">
                     <div class="card btn-months">
                         <div class="card-header">
-                            <h5>This Month Revenue</h5>
+                            <h5>Total Revenue</h5>
                             <div class="dashboard-btn-groups">
                                 <div class="btn-group" role="group" aria-label="Basic example">
                                     <button class="btn btn-outline-light btn-js" type="button">Day</button>

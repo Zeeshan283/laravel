@@ -5,7 +5,7 @@
             <div><img class="img-60 rounded-circle lazyloaded blur-up" src="../assets/admin/images/dashboard/man.png" alt="#">
             </div>
             <h6 class="mt-3 f-14">{{ Auth::user()->name }}</h6>
-            <p>{{ Auth::user()->r_name}}</p>
+            <p>{{ Auth::user()->resturant_name}}</p>
         </div>
         
         <ul class="sidebar-menu">

@@ -22,33 +22,31 @@ class AdminController extends Controller
             
             $products = Product::count();
             
-            $customer = User::where('role', '=', 'Customer')->count();
-            $vendorlist = User::where('role', '=', 'Vendor')->count();
-            $new_users = User::where('role', '=', 'Customer')->latest()->take(15)->get();
+            $customers = User::where('role', '=', 'Customer')->count();
+            $vendors = User::where('role', '=', 'Vendor')->count();
             $isAdmin = Auth::user()->role == 'Admin';
             return view(
                 'admin.dashboard.dashboard',
                 compact(
                     'products',
-                    'customer',
-                    'vendorlist',
-                    'new_users',
+                    'customers',
+                    'vendors',
                     'isAdmin',
                 )
             );
         } else {
             
             $products = Product::where('created_by', Auth::User()->id)->count();
-            $customer = User::count();
-            $new_users = User::where('role', '=', 'Customer')->latest()->take(15)->get();
+            $customers = User::where('role', '=', 'Customer')->count();
+            $vendors = User::where('role', '=', 'Vendor')->count();
             $isAdmin = Auth::user();
 
             return view(
                 'admin.dashboard.dashboard',
                 compact(
                     'products',
-                    'customer',
-                    'new_users',
+                    'customers',
+                    'vendors',
                     'isAdmin',
                 )
             );

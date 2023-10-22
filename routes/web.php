@@ -21,10 +21,11 @@ use Illuminate\Support\Facades\Route;
 Auth::routes(['verify' => true]);
 
 
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 
 Route::middleware(['auth', 'verified'])->group(function () {
 
-        // Route::get('/',[HomeController::class, 'index'])->name('home');
         Route::get('/about-us',[HomeController::class, 'about'])->name('about');
         Route::get('/blog-both-sidebar',[HomeController::class, 'bbs'])->name('bbs');
         Route::get('/blog-detail-left-sidebar',[HomeController::class, 'bdls'])->name('bdsl');
@@ -48,9 +49,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
         // Route::get('login', [HomeController::class,'login'])->name('login');
 
-
-
-        Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
         Route::resource('categories',CategoryController::class);
 

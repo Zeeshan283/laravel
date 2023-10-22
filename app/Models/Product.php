@@ -18,6 +18,7 @@ class Product extends Model
         'image',
         'description',
         'details',
+        'make',
         'm_unit',
         'width',
         'depth',
@@ -29,4 +30,9 @@ class Product extends Model
         'updated_at',
 
     ];
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }

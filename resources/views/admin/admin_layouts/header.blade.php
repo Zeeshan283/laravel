@@ -1,6 +1,6 @@
 <div class="page-main-header">
     <div class="main-header-left">
-        <div class="logo-wrapper" style="width: 300px;"><a href="/"><img class="blur-up lazyloaded"
+        <div class="logo-wrapper" style="width: 300px;"><a href="/dashboard"><img class="blur-up lazyloaded"
                     src="{{ asset('upload/logo/-02.png') }}" width="40%" alt="{{ Auth::user()->name }}"></a></div>
     </div>
     <div class="main-header-right ">
@@ -15,13 +15,13 @@
             <ul class="nav-menus">
                 <li>
                     <form class="form-inline search-form">
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <input class="form-control-plaintext" type="search" placeholder="Search.."><span
                                 class="d-sm-none mobile-search"><i data-feather="search"></i></span>
-                        </div>
+                        </div> --}}
                     </form>
                 </li>
-                <li class="onhover-dropdown"><a class="txt-dark" href="javascript:void(0)">
+                {{-- <li class="onhover-dropdown"><a class="txt-dark" href="javascript:void(0)">
                         <h6>EN</h6>
                     </a>
                     <ul class="language-dropdown onhover-show-div p-20">
@@ -34,10 +34,10 @@
                         <li><a href="javascript:void(0)" data-lng="fr"><i class="flag-icon flag-icon-nz"></i>
                                 French</a></li>
                     </ul>
-                </li>
-                <li><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i
-                            data-feather="maximize"></i></a></li>
-                <li class="onhover-dropdown"><i data-feather="bell"></i><span
+                </li> --}}
+                {{-- <li><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i
+                            data-feather="maximize"></i></a></li> --}}
+                {{-- <li class="onhover-dropdown"><i data-feather="bell"></i><span
                         class="badge badge-pill badge-primary pull-right notification-badge">3</span><span
                         class="dot"></span>
                     <ul class="notification-dropdown custom-scrollbar onhover-show-div p-0">
@@ -107,7 +107,7 @@
                     </ul>
                 </li>
                 <li><a href="javascript:void(0)"><i class="right_side_toggle" data-feather="message-square"></i><span
-                            class="dot"></span></a></li>
+                            class="dot"></span></a></li> --}}
                 <li class="onhover-dropdown">
                     <div class="media align-items-center"><img
                             class="align-self-center pull-right img-50 rounded-circle blur-up lazyloaded"

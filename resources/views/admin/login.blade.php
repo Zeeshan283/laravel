@@ -8,9 +8,9 @@
     <meta name="description" content="Bigdeal admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Bigdeal admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="assets/admin/images/favicon/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="assets/admin/images/favicon/favicon.png" type="image/x-icon">
-    <title>Bigdeal - Premium Admin Template</title>
+    {{-- <link rel="icon" href="assets/admin/images/favicon/favicon.png" type="image/x-icon"> --}}
+    {{-- <link rel="shortcut icon" href="assets/admin/images/favicon/favicon.png" type="image/x-icon"> --}}
+    <title>Loop Menu</title>
 
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -230,7 +230,7 @@
                                         </div>
                                         <div class="form-group">
                                             {{-- <input required="" name="login[username]" type="email" class="form-control" placeholder="Username" id="exampleInputEmail12"> --}}
-                                            <input id="r_name" type="text" class="form-control @error('r_name') is-invalid @enderror" name="r_name" value="{{ old('r_name') }}" placeholder="Resturant Name" required autocomplete="r_name" autofocus>
+                                            <input id="resturant_name" type="text" class="form-control @error('resturant_name') is-invalid @enderror" name="resturant_name" value="{{ old('resturant_name') }}" placeholder="Resturant Name" required autocomplete="resturant_name" autofocus>
 
                                         </div>
                                         <div class="form-group">
@@ -244,20 +244,24 @@
                                         <div class="form-group">
                                             <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password" required autocomplete="new-password">
                                         </div> 
-                                        <div class="form-group">
-                                            {{-- <input required="" name="login[password]" type="password" class="form-control" placeholder="Confirm Password"> --}}
+                                        <div class="form-group" style="margin-bottom:0">
+                                            <label for="role">Select a Role:</label>
+                                            <div style="display: flex;flex-direction:row">
+                                                <div style="margin-left: 5px">
+                                                    <input type="radio" id="admin" name="role" value="Vendor" required>
+                                                    <label for="admin">Vendor</label>
+                                                </div>
+                                                <div style="margin-left: 25px">   
+                                                    <input type="radio" id="user" name="role" value="Customer" requiredFres>
+                                                    <label for="user">Customer</label>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="form-terms">
                                             <div class="custom-control custom-checkbox form-check mr-sm-2">                                               
                                                 <input class="form-check-input" type="checkbox" value="" id="customControlAutosizing1">
                                                 <label class="custom-control-label form-check-label" for="customControlAutosizing1"><span>I agree all statements in <a href=""  class="pull-right">Terms &amp; Conditions</a></span></label>
                                             </div>
-                                            <!-- <div class="form-check">
-                                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                              <label class="form-check-label" for="flexCheckDefault">
-                                                Default checkbox
-                                              </label>
-                                            </div> -->
                                         </div>
                                         <div class="form-button">
                                             <button class="btn btn-primary" type="submit">Register</button>

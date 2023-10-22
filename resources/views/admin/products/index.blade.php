@@ -54,18 +54,21 @@
                                 <tr>
                                     <td>{{ $key + 1 }}</td>
                                     <td>{{ $item->name }}</td>
+                                    <td>{{ $item->price}}</td>
+                                    <td>{{ $item->category->name}}</td>
+                                    <td>{{ $item->make }}</td>
+                                    <td><img src="{{ asset($item->image) }}" alt="N/A" width="80px" height="50px"></td>
                                     <td>
-                                        </td>
-                                    <td></td>
-                                    <td><img src="{{ asset($item->url) }}" alt="N/A" width="80px" height="50px">
-                                    </td>
-                                    <td>
-                                        <div>
-                                            <a href=" {{ route('products.edit', ['product' => $item->id]) }} ">
-                                                <i class="fa fa-edit me-2 font-success"></i>
+                                            <a href="#"><button class="btn btn-info">Edit</button></a>
+                                            <a href="#"
+                                                onclick="event.preventDefault(); if (confirm('Are you sure you want to delete this item?')) { document.getElementById('delete-form-{{ $item->id }}').submit(); }">
+                                                <button class="btn btn-danger">Delete</button>
                                             </a>
-                                            <i class="fa fa-trash font-danger"></i>
-                                        </div>
+                                            {{-- <form id="delete-form-{{ $item->id }}" action="{{ route('admin.roznamchas.remove', ['id' => $item->id]) }}" method="POST" style="display: none;">
+                                                @csrf
+                                                @method('DELETE')
+                                            </form> --}}
+
                                     </td>
                                 </tr>
                             @endforeach

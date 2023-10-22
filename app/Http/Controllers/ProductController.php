@@ -26,11 +26,7 @@ class ProductController extends Controller
                 OrderBy('id', 'desc')
                 ->get();
         } else {
-            $data = Product::with('product_image')
-                ->with('categories:id,name')
-                ->where('created_by', Auth::User()->id)
-                ->OrderBy('id', 'desc')
-                ->get();
+            $data = Product::where('created_by', Auth::User()->id)->with('category')->get();
         }
 
 
