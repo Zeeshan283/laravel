@@ -10,7 +10,6 @@
         <ul class="sidebar-menu">
             <li><a class="sidebar-header" href="/dashboard"><i data-feather="home"></i><span>Dashboard</span></a></li>
             @if (Auth::user()->role == 'Admin')
-                
                 <li><a class="sidebar-header" href="javascript:void(0)"><i
                             data-feather="align-left"></i><span>Category</span><i
                             class="fa fa-angle-right pull-right"></i></a>
@@ -24,7 +23,8 @@
                 <li><a class="sidebar-header" href=""><i data-feather="settings"></i><span>Settings</span><i
                             class="fa fa-angle-right pull-right"></i></a>
                     <ul class="sidebar-submenu">
-                        {{-- <li><a href="{{ route('banners.index') }}"><i class="fa fa-circle"></i>Home Banner's</a></li> --}}
+                        <li><a href="{{ route('profiles.edit', ['profile' => Auth::User()->id]) }}"><i
+                                    class="fa fa-circle"></i>Profile</a></li>
                         {{-- <li><a href="{{ route('home-settings') }}"><i class="fa fa-circle"></i>Home Setting</a></li> --}}
                     </ul>
                 </li>
@@ -37,7 +37,7 @@
                 </ul>
             </li>
 
-            
+
 
 
             {{-- <li><a class="sidebar-header" href=""><i data-feather="dollar-sign"></i><span>Sales</span><i class="fa fa-angle-right pull-right"></i></a>
