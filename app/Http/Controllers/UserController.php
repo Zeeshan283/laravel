@@ -24,7 +24,7 @@ class UserController extends Controller
         $user->email = $request->email;
         if ($request->password) {
             $user->password = bcrypt($request->password);
-        }   
+        }
         if (!is_null($request->file('image'))) {
             File::delete($user->image);
             $extension = $request->file('image')->getClientOriginalName();
